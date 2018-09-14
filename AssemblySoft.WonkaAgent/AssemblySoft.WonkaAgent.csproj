@@ -39,7 +39,7 @@
       <HintPath>packages\AssemblySoft.DevOps.Common.1.0.27\lib\net461\AssemblySoft.DevOps.Common.dll</HintPath>
     </Reference>
     <Reference Include="AssemblySoft.IO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\AssemblySoft.IO.1.0.3\lib\net461\AssemblySoft.IO.dll</HintPath>
+      <HintPath>packages\AssemblySoft.IO.1.0.6\lib\net461\AssemblySoft.IO.dll</HintPath>
     </Reference>
     <Reference Include="AssemblySoft.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\AssemblySoft.Serialization.1.0.5\lib\net461\AssemblySoft.Serialization.dll</HintPath>
@@ -63,8 +63,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
